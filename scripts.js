@@ -13,13 +13,31 @@ function loadJSON(callback) {
   xobj.send(null);  
 }
 
+function sorteiaUmaFrase(frases) {
+  let magicNumber = sorteiaUmNumero(0, frases.length)
+  return frases[magicNumber].frase;
+}
+
+function sorteiaUmNumero(min, max) {
+  return Math.floor(Math.random() * (max - min) ) + min;
+}
+
 var app = new Vue({
   el: '#app',
   data: {
+    frases: {},
     message: ''
   },
   beforeCreate() {
-    var vm = this
-    loadJSON((response) => { vm.message = JSON.parse(response)[0].frase });
+    var vm = this;
+    loadJSON((response) => { 
+      vm.frases = JSON.parse(response);
+      vm.message = sorteiaUmaFrase(vm.frases);
+    });
+  },
+  create() {
+    
+  },
+  methods: {
   }
 })
