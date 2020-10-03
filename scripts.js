@@ -1,6 +1,3 @@
-//var frases;
-//loadJSON((response) => { console.log(JSON.parse(response)[0].frase) });
-
 function loadJSON(callback) {   
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
@@ -40,8 +37,7 @@ var app = new Vue({
       this.fraseAtual = sorteiaUmaFrase(this.frases);
     },
     getVideo(event) {
-      let url = `${this.fraseAtual.video}&t=${this.fraseAtual.segundos}`;
-      console.log(url);
+      let url = `${this.fraseAtual.video}&t=${this.fraseAtual.tempo}`;
       window.open(url, '_blank');
     }
   }
