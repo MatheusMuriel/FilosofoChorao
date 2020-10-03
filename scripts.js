@@ -35,9 +35,9 @@ var app = new Vue({
       vm.message = sorteiaUmaFrase(vm.frases);
     });
   },
-  create() {
-    
-  },
   methods: {
+    novaFrase(event) {
+      this.message = sorteiaUmaFrase(this.frases);
+    }
   }
 })
