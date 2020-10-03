@@ -1,17 +1,18 @@
 body {
   background-color: #fff;
   background-size: 100% 1.2em;
-  font-family: 'Dancing Script', Georgia, Times, serif;
-}
-
-header{
-  text-align: center;
 }
 
 .header-block {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  font-family: 'Dancing Script', Georgia, Times, serif;
+  text-align: center;
+}
+
+.title-block {
+  margin-inline-start: 22%;
 }
 
 .title-block h1 {
@@ -29,4 +30,31 @@ header{
 
 .header-block img {
   width: 16%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .frase-block {
+  font-family: 'Dancing Script', Georgia, Times, serif;
+  text-align: center;
+}
+
+.container .frase-block .frase {
+  font-size: 50px;
+  padding: 0px;
+  margin: 0px;
+}
+.container .frase-block .musica {
+  font-size: 25px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container .buttons-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }

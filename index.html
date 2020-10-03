@@ -15,22 +15,38 @@
     <link href="./styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div>
-      <header>
-        <div class="header-block">
-          <div class="title-block">
-            <h1>Filosofo Chorão</h1>
-            <h6>O maior filosofo que já andou em um skate</h6>
-          </div>
-          <img src="assets/choris.webp" alt="Chorão andando de skate" >
+    <header>
+      <div class="header-block">
+        <div class="title-block">
+          <h1>Filosofo Chorão</h1>
+          <h6>O maior filosofo que já andou em um skate</h6>
         </div>
-        
-      </header>
+        <img src="assets/choris.webp" alt="Chorão andando de skate" >
+      </div>
       
-    </div>
+    </header>
     
     <div id="app">
-      {{ message }}
+      <div class="container">
+        <div class="frase-block">
+          <p class="frase">"{{ message }}"</p>
+          <p class="musica">musica - Charlie Brown</p>
+        </div>
+  
+        <div class="buttons-block">
+          <button class="btn-youtube">
+            Play on YouTube
+          </button>
+    
+          <div class="controles-frases">
+            <button class="btn-nova-frase" v-on:click="novaFrase" >
+              Nova Frase
+            </button>
+          </div>
+
+        </div>
+        <!-- <p class="help-us">Conhece alguma frase que não está aqui? <a href="https://github.com/IgorRozani/filosofunk" target="_blank">Envie sua frase em nosso GitHub.</a></p> -->
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
