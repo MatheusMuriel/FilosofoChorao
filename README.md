@@ -56,7 +56,7 @@ Explicação:
 2. Não serão aceitos Pull Requests com campos faltando no JSON.
 
 ## Quer sugerir mudanças?
-Basta [criar uma Issue]() descrevendo a sugestão e eu irei analizar se ela se encaixa ou não na ideia do projeto.
+Basta [criar uma Issue](https://github.com/MatheusMuriel/FilosofoChorao/issues/new) descrevendo a sugestão e eu irei analizar se ela se encaixa ou não na ideia do projeto.
 
 ## Agradecimentos
 Meus agradecimentos a [Isabelli Russo](https://github.com/isabelirusso-dev) que me ajudou nas traduções e layout, e a todos os outros [contribuidores](https://github.com/MatheusMuriel/FilosofoChorao/graphs/contributors).  
