@@ -1,0 +1,32 @@
+body {
+  background-color: #fff;
+  background-size: 100% 1.2em;
+  font-family: 'Dancing Script', Georgia, Times, serif;
+}
+
+header{
+  text-align: center;
+}
+
+.header-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-block h1 {
+  font-size: 50px;
+  padding: 0px;
+  margin: 0px;
+  color:rgb(240,50,50);
+}
+
+.title-block h6{
+  font-size: 25px;
+  margin-top: 0px;
+  color:rgb(240,50,50);
+}
+
+.header-block img {
+  width: 20%;
+}
