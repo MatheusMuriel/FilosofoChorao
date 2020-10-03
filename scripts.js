@@ -38,6 +38,11 @@ var app = new Vue({
   methods: {
     novaFrase(event) {
       this.fraseAtual = sorteiaUmaFrase(this.frases);
+    },
+    getVideo(event) {
+      let url = `${this.fraseAtual.video}&t=${this.fraseAtual.segundos}`;
+      console.log(url);
+      window.open(url, '_blank');
     }
   }
 })
