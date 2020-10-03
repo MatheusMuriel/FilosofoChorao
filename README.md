@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/headerReadme.png" alt="NES.css: NES-style  CSS framework" style="max-width: 100%;" width="600" height="315">
+  <img src="./assets/headerReadme.png" alt="Chorão andando de skate" style="max-width: 100%;" width="600" height="315">
   <p>Grandes frases do maior filósofo que já pisou em um skate.</p>
 
   <p align="center">
@@ -15,7 +15,7 @@
 </div>
 
 ---
-Para ver o projeto rodando: [https://matheusmuriel.github.io/FilosofoChorao/index.html](https://matheusmuriel.github.io/FilosofoChorao/index.html)
+Para ver o projeto rodando: [matheusmuriel.github.io/FilosofoChorao](https://matheusmuriel.github.io/FilosofoChorao/index.html)
 #### Screenshot
 ![Screenshot](assets/screenshot.png?raw=true "Screenshot")
 
