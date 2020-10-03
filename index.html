@@ -18,8 +18,8 @@
     <header>
       <div class="header-block">
         <div class="title-block">
-          <h1>Filosofo Chorão</h1>
-          <h6>O maior filosofo que já andou em um skate</h6>
+          <h1>Filósofo Chorão</h1>
+          <h6>O maior filósofo que já pisou em um skate</h6>
         </div>
         <img src="assets/choris.webp" alt="Chorão andando de skate" >
       </div>
@@ -30,17 +30,17 @@
       <div class="container">
         <div class="frase-block">
           <p class="frase">"{{ fraseAtual.frase }}"</p>
-          <p class="musica">{{fraseAtual.musica}}</p>
+          <p class="musica">{{ fraseAtual.musica }}</p>
         </div>
   
         <div class="buttons-block">
           <button class="btn-youtube" v-on:click="getVideo">
-            Play on YouTube
+            Ouvir no YouTube
           </button>
     
           <div class="controles-frases">
             <button class="btn-nova-frase" v-on:click="novaFrase" >
-              Nova Frase
+              Outra Frase
             </button>
           </div>
         </div>
