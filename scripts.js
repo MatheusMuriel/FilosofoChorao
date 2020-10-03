@@ -15,7 +15,7 @@ function loadJSON(callback) {
 
 function sorteiaUmaFrase(frases) {
   let magicNumber = sorteiaUmNumero(0, frases.length)
-  return frases[magicNumber].frase;
+  return frases[magicNumber];
 }
 
 function sorteiaUmNumero(min, max) {
@@ -26,18 +26,18 @@ var app = new Vue({
   el: '#app',
   data: {
     frases: {},
-    message: ''
+    fraseAtual: {}
   },
   beforeCreate() {
     var vm = this;
     loadJSON((response) => { 
       vm.frases = JSON.parse(response);
-      vm.message = sorteiaUmaFrase(vm.frases);
+      vm.fraseAtual = sorteiaUmaFrase(vm.frases);
     });
   },
   methods: {
     novaFrase(event) {
-      this.message = sorteiaUmaFrase(this.frases);
+      this.fraseAtual = sorteiaUmaFrase(this.frases);
     }
   }
 })
