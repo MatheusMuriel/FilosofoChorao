@@ -38,7 +38,7 @@ Siga os passos normais para uma contribuição:
 As frases estão armazenadas no arquivo [frases.json](https://github.com/MatheusMuriel/FilosofoChorao/blob/main/frases.json), adicione as novas frases no final do arquivo, utilizando a seguinte estrutura: 
 
 ```JSON
-{
+,{
     "frase": "Coração de vagabundo bate na sola do pé",
     "musica": "Champanhe e Água Benta - Charlie Brown Jr.",
     "video": "https://www.youtube.com/watch?v=DVhBBr9OgWc",
