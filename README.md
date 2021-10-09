@@ -26,7 +26,7 @@ Um dia enquanto eu estava programando para alguns projetos da Hacktoberfest e ou
 Esse projeto foi feito com **HTML**, **JavaScript**, **CSS** _(Usando Flexbox)_ e o auxílio do framework [VueJS](https://vuejs.org/), com o objetivo juntar e disseminar esse conhecimento pelo mundo.
 
 ## Como contribuir com novas frases?
-Video de exemplo: [Guia de contribuição Hacktoberfest](https://hacktoberfest.digitalocean.com/details#beginners).  
+Estamos participando [Hacktoberfest 2021](https://hacktoberfest.digitalocean.com/).  
 Siga os passos normais para uma contribuição: 
 1. Fork esse repositório.
 2. Clone na sua maquina.
