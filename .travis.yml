@@ -1,0 +1,12 @@
+language: node_js
+
+branches:
+  only:
+    - /(.*)/   # test all branches
+
+before_script:
+  - npm install -g jsonlint
+
+script: 
+  - jsonlint -q frases.json
+  - bundle exec ./validate.rb
