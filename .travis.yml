@@ -5,4 +5,3 @@ before_script:
 
 script: 
   - jsonlint -q frases.json
-  - bundle exec ./validate.rb
