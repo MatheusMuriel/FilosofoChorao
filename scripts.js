@@ -10,9 +10,13 @@ function loadJSON(callback) {
   xobj.send(null);  
 }
 
-function sorteiaUmaFrase(frases) {
-  let magicNumber = sorteiaUmNumero(0, frases.length)
-  return frases[magicNumber];
+function sorteiaUmaFrase(frasesRestantes) {
+  let magicNumber = sorteiaUmNumero(0, frasesRestantes.length)
+  let resposta = {
+    frase: frasesRestantes[magicNumber],
+    id: magicNumber
+  }
+  return resposta;
 }
 
 function sorteiaUmNumero(min, max) {
@@ -23,18 +27,27 @@ var app = new Vue({
   el: '#app',
   data: {
     frases: {},
+    frasesRestantes: {},
     fraseAtual: {}
   },
   beforeCreate() {
     var vm = this;
     loadJSON((response) => { 
-      vm.frases = JSON.parse(response);
-      vm.fraseAtual = sorteiaUmaFrase(vm.frases);
+      vm.frases = response;
+      vm.frasesRestantes= JSON.parse(response);
+      let resposta = sorteiaUmaFrase(this.frasesRestantes);
+      vm.fraseAtual = resposta.frase;
+      vm.frasesRestantes.splice(response.id, 1)
     });
   },
   methods: {
     novaFrase(event) {
-      this.fraseAtual = sorteiaUmaFrase(this.frases);
+      let response = sorteiaUmaFrase(this.frasesRestantes);
+      this.fraseAtual = response.frase;
+      this.frasesRestantes.splice(response.id, 1)
+      if(this.frasesRestantes.length == 1) {
+        this.frasesRestantes = JSON.parse(this.frases);
+      }
     },
     getVideo(event) {
       let url = `${this.fraseAtual.video}&t=${this.fraseAtual.tempo}`;
