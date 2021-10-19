@@ -52,6 +52,9 @@ var app = new Vue({
     getVideo(event) {
       let url = `${this.fraseAtual.video}&t=${this.fraseAtual.tempo}`;
       window.open(url, '_blank');
+    },
+    preparaFrase(frase) {
+      return `"${frase}"`;
     }
   }
 })
