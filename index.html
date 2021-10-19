@@ -28,7 +28,7 @@
     <div id="app">
       <div class="container">
         <div class="frase-block">
-          <p class="frase">"{{ fraseAtual.frase }}"</p>
+          <p class="frase" v-html="preparaFrase(fraseAtual.frase)"></p>
           <p class="musica">{{ fraseAtual.musica }}</p>
         </div>
   
